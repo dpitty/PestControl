@@ -28,8 +28,6 @@ textarea {
 	width:100%;
 }
 
-
-
 #notesBlock, textarea {
 	font-family: Times;
 	font-size: 14pt;	
@@ -38,12 +36,16 @@ textarea {
 
 
 #insertTop {
+	display:none;
+}
+
+#insertTop.highlight {
 	color: gray;
 	font-size: smaller;
+	display:block;
 }
 
 #instructionsBox {
-
 	background-color: gray;
 	position: absolute;
 	width:60%;
@@ -66,18 +68,18 @@ textarea {
 .table {
 	display:table;
 	color:white;
-
 }
+
 .row {
 	display:table-row;
 	padding-left: 16px;
 }
+
 .col1 {
 	display:table-cell;
 	font-weight: bold;
 	padding-left: 16px;
 	padding-top: 4px;
-
 }
 
 .col2 {
@@ -85,15 +87,6 @@ textarea {
 	padding-left: 16px;
 }
 
-.centered {
-	position: absolute;
-	margin-left:auto;
-	margin-right:auto;
-	left: 0;
-	right: 0;
-}
-
-
 .hidden {
-	display: none;
+	display:none;
 }
