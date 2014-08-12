@@ -3,21 +3,49 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
    <head>
       <link rel="stylesheet" type="text/css" href="stylesheet.css" title="sheet1"/>
-      <script type='text/javascript' src='jquery-1.4.4.min.js'></script>
    </head>
    <body>
+
       <div id='header'>
-         <p>INSTRUCTIONS: <br/>
-            'return' - add note | '=' - delete note | use arrows to scroll
+         <p>PEST CONTROL: Notes without mice <br/>
+            Your mouse is useless. Press 'RETURN' to make a note. Press 'I' for more instructions.
          </p>
       </div>
-      <div id='notesBlock'>
-         <div><div id='insertTop'><p>(Imagine collapsed)</p></div><hr/></div>
-         <div><div><p>First note</p></div><hr/></div>
-         <div><div><p>Second notes</p></div><hr/></div>
-         <div><div><p>First note</p></div><hr/></div>
-         <div><div><p>First note</p></div><hr/></div>
 
+      <div id='instructionsBox' class='hidden'>
+         <span>Your mouse does nothing!<br/>All the buttons you need to use this app...</span>
+         <section class='table'>
+            <div class='row'>
+               <div class='col1'>'I'</div>
+               <div class='col2'>Show and hide instructions (press 'I' to get back to your notes).</div>
+            </div>
+            <div class='row'>
+               <div class='col1'>'RETURN'</div>
+               <div class='col2'>Start a new note, or finish the one you're working on.</div>
+            </div>
+            <div class='row'>
+               <div class='col1'>'BACKSPACE'</div>
+               <div class='col2'>Delete the selected note.</div>
+            </div>
+            <div class='row'>
+               <div class='col1'>'E'</div>
+               <div class='col2'>Edit the selected note.</div>
+            </div>
+            <div class='row'>
+               <div class='col1'>UP-ARROW</div>
+               <div class='col2'>Scroll Up.</div>
+            </div>
+            <div class='row'>
+               <div class='col1'>DOWN-ARROW</div>
+               <div class='col2'>Scroll Down.</div>
+            </div>
+         </section>
+      </div>
+
+      <div id='notesBlock'>
+         <div>
+            <div><p>&gt;&gt; New top note...</p></div><hr/>
+         </div>
       </div>
    </body>
    <script type='text/javascript' src='pestcontrol.js'></script>

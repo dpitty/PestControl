@@ -4,9 +4,12 @@
  	border: 2px solid black;
  	margin-bottom: 2em;
 	width: 100%;
-	height: 3.5em;
+	text-align: center;
 }
 
+#header p {
+	margin: 2px;
+}
 
 #notesBlock {
 	width: 100%;
@@ -19,13 +22,6 @@
 .highlight {
 	width: 100%;
  	border: 2px dashed red;
-}
-
-.phighlight {
-	width: 98%;
-	margin: 2em;
- 	border: 2px dashed red;
-
 }
 
 textarea {
@@ -41,15 +37,63 @@ textarea {
 }
 
 
-.topOfList {
-	border: 8px dashed red;
-}
-
-.hidden {
-	visibility: hidden;
-	visibility: collapse;
-}
-
 #insertTop {
 	color: gray;
+	font-size: smaller;
+}
+
+#instructionsBox {
+
+	background-color: gray;
+	position: absolute;
+	width:60%;
+	margin-left:auto;
+	margin-right:auto;
+	left: 1px;
+	right: 1px;
+	border: 4px solid green;
+	padding:20px;
+	border-radius: 8px;
+	opacity: 0.92;
+	float:right;
+}
+
+#instructionsBox span {
+	font-weight: bold;
+}
+
+
+.table {
+	display:table;
+	color:white;
+
+}
+.row {
+	display:table-row;
+	padding-left: 16px;
+}
+.col1 {
+	display:table-cell;
+	font-weight: bold;
+	padding-left: 16px;
+	padding-top: 4px;
+
+}
+
+.col2 {
+	display:table-cell;
+	padding-left: 16px;
+}
+
+.centered {
+	position: absolute;
+	margin-left:auto;
+	margin-right:auto;
+	left: 0;
+	right: 0;
+}
+
+
+.hidden {
+	display: none;
 }
